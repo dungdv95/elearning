@@ -43,7 +43,7 @@ export function Sidebar() {
                 <div className="flex gap-7 items-center">
                   <div className="flex gap-2">
                     <Phone className="h-4 w-4" />
-                    <span className="text-sm">Email:demo@gmail.com</span>
+                    <span className="text-sm">0123456789</span>
                   </div>
                   <Languages />
                   <div className="flex gap-4 items-center">
