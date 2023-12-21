@@ -13,9 +13,10 @@ import { Toaster } from "@/components/ui/toaster";
 import Providers from "@/app/providers";
 import { ErrorConfirm } from "@/components/comfirm-error";
 import { Confirmer } from "@/components/confirm";
+import { LoginDialog } from "@/components/login-dialog";
 
 export const metadata = {
-  title: "EID-Merchants"
+  title: "EID-Merchants",
 };
 export default function RootLayout({ children }: { children: ReactNode }) {
   const body = cn("font-sans", fontSans.variable);
@@ -30,6 +31,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <Toaster />
             <ErrorConfirm />
             <Confirmer />
+            <LoginDialog />
           </TooltipProvider>
         </ThemeProvider>
       </body>
