@@ -4,9 +4,11 @@ import { usePathname, useRouter } from "next/navigation";
 import { useStoreDialog } from "../login-dialog";
 
 const navigation = [
-  { name: "GIỚI THIỆU", href: "/introduce", current: true },
-  { name: "KHÓA HỌC", href: "/courses", current: false },
-  { name: "AFFILIATE", href: "/affiliate", current: false },
+  { name: "TRANG TRỦ", href: "/home" },
+  { name: "GIỚI THIỆU", href: "/introduce" },
+  { name: "KHÓA HỌC", href: "/courses" },
+  { name: "TIN TỨC", href: "/news" },
+  { name: "TRỢ GIÚP", href: "/help-center" },
 ];
 
 function classNames(...classes: any) {
@@ -46,7 +48,6 @@ export function SidebarNoSignIn() {
                   : "text-gray-900 hover:bg-gray-50 hover:text-gray-900",
                 "inline-flex items-center rounded-md py-1 px-3 text-sm font-semibold"
               )}
-              aria-current={item.current ? "page" : undefined}
             >
               {item.name}
             </Link>

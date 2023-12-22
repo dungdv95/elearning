@@ -11,6 +11,7 @@ interface LayoutProps {
 }
 
 export default function LayoutSide({ children }: LayoutProps) {
+  /* Check login va token o day */
   // const router = useRouter();
   // const [openApp, setOpenApp] = useState(false);
 
@@ -37,8 +38,7 @@ export default function LayoutSide({ children }: LayoutProps) {
         <div className="relative z-0 flex flex-auto flex-col overflow-hidden">
           <div className="flex min-h-0 flex-1 flex-col">
             <LoadingGlobal />
-            {/* <Sidebar /> */}
-            <SidebarNoSignIn />
+            <Sidebar />
             <div className="flex min-w-0 flex-1 flex-col overflow-hidden">
               {children}
             </div>
