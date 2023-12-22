@@ -15,13 +15,14 @@ import {
   Youtube,
 } from "lucide-react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const navigation = [
-  { name: "Trang trủ", href: "#", current: true },
-  { name: "Giới thiệu", href: "#", current: false },
-  { name: "Dịch vụ", href: "#", current: false },
-  { name: "Tin tức", href: "#", current: false },
-  { name: "Liên hệ", href: "#", current: false },
+  { name: "TỔNG QUAN", href: "/overview" },
+  { name: "KHÓA HỌC", href: "/courses-list" },
+  { name: "AFFILIATE", href: "/affiliate" },
+  { name: "TIN TỨC", href: "/news-logined" },
+  { name: "TRỢ GIÚP", href: "/help-logined" },
 ];
 
 function classNames(...classes: any) {
@@ -29,6 +30,7 @@ function classNames(...classes: any) {
 }
 
 export function Sidebar() {
+  const pathName = usePathname();
   return (
     <Disclosure as="header" className="bg-white shadow">
       {({ open }) => (
@@ -79,12 +81,11 @@ export function Sidebar() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current
+                          pathName === item.href
                             ? "bg-gray-100 text-gray-900"
                             : "text-gray-900 hover:bg-gray-50 hover:text-gray-900",
                           "inline-flex items-center rounded-md py-1 px-3 text-sm font-medium"
                         )}
-                        aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
                       </Link>
