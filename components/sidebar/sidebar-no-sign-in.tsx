@@ -4,7 +4,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { useStoreDialog } from "../login-dialog";
 
 const navigation = [
-  { name: "TRANG TRỦ", href: "/home" },
+  { name: "TRANG CHỦ", href: "/home" },
   { name: "GIỚI THIỆU", href: "/introduce" },
   { name: "KHÓA HỌC", href: "/courses" },
   { name: "TIN TỨC", href: "/news" },
