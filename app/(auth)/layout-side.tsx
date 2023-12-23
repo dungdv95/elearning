@@ -39,7 +39,7 @@ export default function LayoutSide({ children }: LayoutProps) {
           <div className="flex min-h-0 flex-1 flex-col">
             <LoadingGlobal />
             <Sidebar />
-            <div className="flex min-w-0 flex-1 flex-col overflow-hidden">
+            <div className="flex min-w-0 flex-1 flex-col">
               {children}
             </div>
           </div>

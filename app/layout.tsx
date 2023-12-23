@@ -7,11 +7,11 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { fontSans } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
-import { Inter } from "next/font/google";
+import { Mulish } from "next/font/google";
 import { ReactNode } from "react";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Mulish({ subsets: ["latin"] });
 
 export const metadata = {
   title: "EID-Merchants",
