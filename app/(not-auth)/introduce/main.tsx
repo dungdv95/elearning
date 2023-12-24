@@ -2,6 +2,7 @@ import Image from "next/image";
 import FeaturedCourse from "./FeaturedCourse";
 import Quality from "./Quality";
 import Differences from "./Differences";
+import BlogPost from "@/components/introduce/BlogPost";
 
 export default function MainPage() {
   return (
@@ -124,6 +125,7 @@ export default function MainPage() {
       <FeaturedCourse/>
       <Quality/>
       <Differences/>
+      <BlogPost />
     </div>
   );
 }
