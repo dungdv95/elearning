@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useStoreDialog } from "../login-dialog";
+import { useStoreRegisterDialog } from "../register-dialog";
 
 const navigation = [
   { name: "TRANG CHỦ", href: "/home" },
@@ -18,8 +19,11 @@ function classNames(...classes: any) {
 export function SidebarNoSignIn() {
   const pathName = usePathname();
   const setOpenLogin = useStoreDialog((state) => state.setOpen);
+  const setOpenRegister = useStoreRegisterDialog((state) => state.setOpen);
 
-  const handleRegister = () => {};
+  const handleRegister = () => {
+    setOpenRegister(true);
+  };
 
   const handleLogin = () => {
     setOpenLogin(true);
