@@ -112,7 +112,7 @@ export default function MainPage() {
                 </div>
               </div>
               <div className="w-1/2 pr-[121px]">
-                <div className="h-[409px] rounded-[5px] bg-cover pt-[26px] pb-[36px] bg-[linear-gradient(0deg,#000000cc,#000000cc),url('/asset/home/home2.png')]">
+                <div className="h-[409px] rounded-[5px] bg-cover pt-[26px] pb-[36px] bg-[linear-gradient(0deg,#000000cc,#000000cc),url('/asset/home/home5.png')]">
                   <div className="flex justify-center">
                     <span className="text-[18px] font-extrabold leading-[30px] w-[384px]">
                       KHÓA NÂNG CAO CHUYÊN SÂU TỪNG NGÀNH HÀNG
