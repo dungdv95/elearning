@@ -32,7 +32,7 @@ function classNames(...classes: any) {
 export function Sidebar() {
   const pathName = usePathname();
   return (
-    <Disclosure as="header" className="bg-white shadow">
+    <Disclosure as="header" className="bg-white shadow container">
       {({ open }) => (
         <>
           <div className="px-12 py-1">
