@@ -1,10 +1,30 @@
+import Breadcrumbs from "@/components/Breadcrumbs";
+import LessonList from "./LessonList";
+import Image from "next/image";
+import Video from "./Video";
+import Quiz from "./Quiz";
+import CourseSimilar from "./CourseSimilar";
+
 export default function MainPage() {
   return (
-    <div className="flex flex-col  p-4 h-full w-full overflow-hidden pt-2">
-      <div className="flex items-center justify-between space-y-4">
-        <h2 className="text-2xl font-bold tracking-tight">Courses List</h2>
-      </div>
-      <div>Courses List</div>
+
+    <div className="container mx-auto !p-0">
+        <Breadcrumbs/>
+        <div className="flex" style={{marginTop: '31px'}}>
+          <div className="w-1/3">
+            <LessonList/>
+          </div>
+          <div className="w-1/3">
+            <Video/>
+          </div>
+          <div className="w-1/3" style={{paddingLeft: '16px'}}>
+            <Quiz/>
+            <CourseSimilar />
+          </div>
+        </div>
+        <div style={{height: 100}}>
+
+        </div>
     </div>
   );
 }
