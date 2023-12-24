@@ -2,6 +2,7 @@ import Providers from "@/app/providers";
 import { ErrorConfirm } from "@/components/comfirm-error";
 import { Confirmer } from "@/components/confirm";
 import { LoginDialog } from "@/components/login-dialog";
+import { RegisterDialog } from "@/components/register-dialog";
 import { ThemeProvider } from "@/components/provider-theme";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -30,6 +31,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <ErrorConfirm />
             <Confirmer />
             <LoginDialog />
+            <RegisterDialog />
           </TooltipProvider>
         </ThemeProvider>
       </body>
