@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { useLoginStore } from "../sign-in/store";
 import { useRouter } from "next/navigation";
 import { SidebarNoSignIn } from "@/components/sidebar/sidebar-no-sign-in";
+import Footer from "@/components/footer";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -39,9 +40,8 @@ export default function LayoutSide({ children }: LayoutProps) {
           <div className="flex min-h-0 flex-1 flex-col">
             <LoadingGlobal />
             <SidebarNoSignIn />
-            <div className="flex min-w-0 flex-1 flex-col">
-              {children}
-            </div>
+            <div className="flex min-w-0 flex-1 flex-col">{children}</div>
+            <Footer />
           </div>
         </div>
       </div>
