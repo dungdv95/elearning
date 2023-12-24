@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function MainPage() {
   return (
-    <div className="container mx-auto !p-0 text-white ">
+    <div className="container mx-auto !p-0 text-white">
       <section>
         <div className="relative overflow-hidden bg-[url('/asset/home/home-gradient.png')]">
           <img

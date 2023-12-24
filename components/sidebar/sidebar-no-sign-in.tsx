@@ -30,7 +30,7 @@ export function SidebarNoSignIn() {
   };
 
   return (
-    <div className="flex justify-between px-[52px] py-[14px]">
+    <div className="flex justify-between px-[52px] py-[14px] shadow">
       <div className="flex items-center">
         <Image
           src="/asset/logo.png"
